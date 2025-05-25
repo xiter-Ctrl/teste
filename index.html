@@ -8,13 +8,22 @@
 <body>
     <input type="text" placeholder="Digite seu nome">
     <input type="password" placeholder="Digite seu senha">
-    <button onclick="login()">Fazer login</button>
+    <button onclick="mostrarOutroBotao()" onclick="login()">Fazer login</button>
     
+    <button id="botao2" style="display: none;">Tentar novamente</button>
+
     <script>
 function login() {
     alert("Acesso negado. Você não é o escolhido.");
 }
 </script>
+
+<script>
+    function mostrarOutroBotao() {
+        document.getElementById("botao2").style.display = "inline";
+    }
+    </script>
+
 
 </body>
 </html>
