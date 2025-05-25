@@ -11,15 +11,22 @@
     <button onclick="login(); mostrarOutroBotao()">Fazer login</button>
 
     
-    <button id="botao2" onclick="TENTARDNV()" style="display: none;">Tentar novamente</button>
+    <button id="botao2" onclick="TENTARDNV();continuar()" style="display: none;">Tentar novamente</button>
 
-
+    <button id="botao3" onclick="A()" style="display: none;">insistir</button>
     
     <script>
 function login() {
     alert("Acesso negado. Você não é o escolhido.");
 }
 </script>
+
+<script>
+    function A() {
+        document.body.style.backgroundColor = "red";
+}
+    </script>
+    
 
 <script>
     function TENTARDNV() {
@@ -33,6 +40,12 @@ function login() {
 <script>
     function mostrarOutroBotao() {
         document.getElementById("botao2").style.display = "inline";
+    }
+    </script>
+
+<script>
+    function continuar() {
+        document.getElementById("botao3").style.display = "inline";
     }
     </script>
 
